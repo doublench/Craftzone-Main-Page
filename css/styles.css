@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'GTPressuraRegular';
+    src: url(../fonts/GT-Pressura-Regular.eot),
+    url(../fonts/GT-Pressura-Regular.woff) format('woff'),
+    url(../fonts/GT-Pressura-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GTPressuraBold';
+    src: url(../fonts/GT-Pressura-Bold.eot),
+    url(../fonts/GT-Pressura-Bold.woff) format('woff'),
+    url(../fonts/GT-Pressura-Bold.ttf) format('truetype');
+}
+
+body {
+    color: #fff;
+    font-family: 'GTPressuraRegular', sans-serif;
+    margin: 0;
+    background-color: #000;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    overflow: hidden;
+}
+
+.canvas-container {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+#canvas-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.controls {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+}
+
+.controls a {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controls p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.canvas-title-container {
+    margin-top: 76px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.canvas-header {
+    color: #FFFFFF;
+    font-family: 'GTPressuraBold', sans-serif;
+    font-size: 27px;
+    letter-spacing: 2.2px;
+    line-height: 37px;
+    margin: 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.canvas-subheader {
+    color: #777777;
+    font-family: 'GTPressuraBold', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    line-height: 27px;
+    margin: 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.canvas-copy {
+    display: none;
+    width: 280px;
+    color: #777777;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    line-height: 23px;
+    margin: 0;
+    z-index: 1;
+
+    transition: opacity 0.2s ease-in-out;
+}
+
+.is-fade-out {
+    opacity: 0;
+}
+
+@media (max-height: 550px) and (max-width: 767px) {
+    #canvas-wrapper {
+        top: -30px;
+    }
+
+    .canvas-title-container {
+        margin-top: 60px;
+    }
+
+    .canvas-header {
+        display: none;
+    }
+}
+
+@media (min-height: 750px) {
+    .canvas-copy {
+        display: block;
+    }
+}
+
+@media (min-height: 600px) {
+    .canvas-title-container {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    #canvas-wrapper {
+        top: 0;
+    }
+
+    .canvas-title-container {
+        margin-top: 100px;
+    }
+
+    .canvas-header {
+        font-size: 40px;
+        letter-spacing: 3.35px;
+        line-height: 41px;
+    }
+
+    .canvas-subheader {
+        font-size: 24px;
+        letter-spacing: 2.5px;
+        line-height: 39px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    .canvas-copy {
+        width: 320px;
+        letter-spacing: 1.4px;
+        line-height: 24px;
+    }
+}
+
+@media (max-height: 670px) {
+    .canvas-title-container {
+        margin-top: 48px;
+    }
+}
