@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Craftzone
+    </title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Craftzone">
+
+    <meta name="keywords" content="craftzone, dota, dota2, teamspeack, cs, wow">
+
+
+    <style>@font-face {
+        font-family: 'GTPressuraRegular';
+        src: url('//gaming.youtube.com/s/gaming/GT-Pressura-Regular.eot'), url('//gaming.youtube.com/s/gaming/GT-Pressura-Regular.woff') format('woff'), url('//gaming.youtube.com/s/gaming/GT-Pressura-Regular.ttf') format('truetype');
+    }
+
+    body {
+        background-color: #101010;
+        bottom: 0;
+        color: white;
+        font-family: 'GTPressuraRegular', Roboto, sans-serif;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #page, #content-container, #content {
+        align-items: center;
+        -webkit-align-items: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Workaround for spt linter */
+    a, button, div, form, iframe, img, label, p, select, span {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .logo-iframe {
+        background-color: #000;
+        border: 0;
+        bottom: 0;
+        height: calc(100% - 82px);
+        left: 0;
+        position: absolute;
+        top: 82px;
+        width: 100%;
+    }
+
+    .page-content {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        width: 100%;
+    }
+
+    .title-bar {
+        background-color: rgb(24, 24, 24);
+        height: 96px;
+        text-align: center;
+    }
+
+    .craftzone-logo {
+        border: 0;
+        height: 75px;
+        margin: 3.5px auto 13.5px auto;
+        width: 375px;
+    }
+
+    .content-bar {
+        align-items: center;
+        -webkit-align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-column {
+        align-items: center;
+        -webkit-align-items: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .divider {
+        background-color: #292929;
+        height: 1px;
+        margin: 24px 0 0 0;
+        width: 700px;
+    }
+
+    .footer {
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        width: 700px;
+    }
+
+    .learn-more-link {
+        color: #777;
+        margin: 20px 0 20px 0;
+        text-decoration: none;
+    }
+
+    .twitter-logo {
+        align-self: flex-start;
+        -webkit-align-self: flex-start;
+        margin-top: 17px;
+    }
+
+    .email-overlay p {
+        margin: 27px 210px 0 210px;
+    }
+
+    .email-overlay p:first-child {
+        margin-top: 0;
+    }
+
+    .email-overlay p:last-child {
+        margin-top: 27px;
+    }
+
+    .email-overlay .validation-error {
+        color: #df362c;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 4px 210px 4px 210px;
+    }
+
+    @media (max-width: 700px) {
+        .email-overlay p {
+            margin: 0 96px 27px 96px;
+        }
+    }
+
+    .email-overlay .header {
+        color: #777;
+        letter-spacing: 1.4px;
+        line-height: 24px;
+    }
+
+    .email-overlay .email, .email-overlay .country-select {
+        background-color: transparent;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0;
+        color: #fff;
+        font-size: 17px;
+        line-height: 24px;
+        outline: none;
+        width: 380px;
+    }
+
+    .email-overlay .email {
+        border-width: 0 0 1px 0;
+    }
+
+    .email-overlay .email::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    .email-overlay .email:-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .email-overlay .email::-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .email-overlay .email:-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .country-select option {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .note {
+        font-size: 13px;
+        letter-spacing: 1.26px;
+        line-height: 18px;
+    }
+
+    .note .confirm {
+        margin-right: 24px;
+        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+    }
+
+    .twitter-logo {
+        height: 16px;
+        width: 19px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+
+        .content-column, .divider, .footer, #email-form {
+            width: 100%;
+        }
+
+        .learn-more-link {
+            margin-left: 64px;
+        }
+
+        .twitter-logo {
+            margin-right: 64px;
+        }
+    }</style>
+    <link href="./YouTube_files/css" rel="stylesheet" type="text/css">
+
+
+    <!-- Smart CSS Insertion -->
+    <style type="text/css"></style>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+</head>
+
+
+<body id=""
+      class="date-20150623 ru_RU ltr lite    site-center-aligned site-as-giant-card  not-yt-legacy-css webkit webkit-537"
+      dir="ltr">
+
+<!-- begin page -->
+<div id="page" class="">
+    <div id="content-container">
+        <!-- begin content -->
+        <div id="content">
+            <iframe class="logo-iframe" src="./YouTube_files/saved_resource.html"></iframe>
+            <div class="page-content">
+                <div class="title-bar">
+                    <img class="craftzone-logo" src="./YouTube_files/desktop-gaming-mark-2x.png">
+                </div>
+                <div class="content-bar">
+                    <div class="content-column">
+                        <!--<button id="get-notified">
+                            <span>GET NOTIFIED</span>
+                        </button>-->
+                        <div class="divider"></div>
+                        <div class="footer">
+                            <a href="http://youtube-global.blogspot.com/2015/06/a-youtube-built-for-gamers.html"
+                               class="learn-more-link">
+                                LEARN MORE
+                            </a>
+                            <a href="https://twitter.com/YouTubeGaming" class="twitter-link">
+                                <img class="twitter-logo" src="./YouTube_files/desktop-twitter-mobile-2x.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- end content -->
+    </div>
+
+</div>
+<!-- end page -->
+<!-- Smart JS Insertion -->
+</body>
+</html>
